@@ -10,7 +10,9 @@ export default class WriteStoryScreen extends React.Component {
        title: this.state.title, author: this.state.author, storyText: this.state.storyText, 
        date: firebase.firestore.FieldValue.serverTimestamp().now().toDate() })
        this.setState({
-          title: '', author: '', storyText: '' 
+          title: '',
+         author: '',
+         storyText: '' 
         }) 
       } 
  render(){
